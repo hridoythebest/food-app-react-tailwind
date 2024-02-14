@@ -4,3 +4,6 @@ module.exports = {
     autoprefixer: {},
   },
 }
+
+
+// add more extended packages here

@@ -6,3 +6,6 @@ module.exports = {
   },
   plugins: [],
 };
+
+
+// you can use tailwind library here
