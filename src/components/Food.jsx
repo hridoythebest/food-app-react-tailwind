@@ -71,37 +71,37 @@ const Food = () => {
         {/* Filter Price */}
         <div>
           <p className='font-bold text-gray-700'>Filter Price</p>
-          <div className='flex justify-between max-w-[690px] w-full'>
+          <div className='flex justify-between max-w-[390px] w-full'>
             <button
               onClick={() => filterPrice('9')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              Less Than $10
+               $10
             </button>
             <button
               onClick={() => filterPrice('99')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              Less Than $100
+               $100
             </button>
             <button
               onClick={() => filterPrice('544')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-             Less Than $600
+              $600
             </button>
             <button
               onClick={() => filterPrice('6969')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-             Less Than $7000
+              $7000
             </button>
           </div>
         </div>
       </div>
 
       {/* Display foods */}
-      <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-4'>
         {foods.map((item, index) => (
           <div
             key={index}
