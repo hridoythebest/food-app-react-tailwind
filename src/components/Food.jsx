@@ -6,7 +6,7 @@ const Food = () => {
   const [foods, setFoods] = useState(data);
 
   //   Filter Type burgers/pizza/etc
-  const filterType = (category) => {
+  const filterCategory = (category) => {
     setFoods(
       data.filter((item) => {
         return item.category === category;
@@ -33,7 +33,7 @@ const Food = () => {
       <div className='flex flex-col lg:flex-row justify-between'>
         {/* Fliter Type */}
         <div>
-          <p className='font-bold text-gray-700'>Filter Type</p>
+          <p className='font-bold text-gray-700'>Filter Category</p>
           <div className='flex justfiy-between flex-wrap'>
             <button
               onClick={() => setFoods(data)}
@@ -42,25 +42,25 @@ const Food = () => {
               All
             </button>
             <button
-              onClick={() => filterType('burger')}
+              onClick={() => filterCategory('burger')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
               Burgers
             </button>
             <button
-              onClick={() => filterType('pizza')}
+              onClick={() => filterCategory('pizza')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
               Pizza
             </button>
             <button
-              onClick={() => filterType('salad')}
+              onClick={() => filterCategory('salad')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
               Salads
             </button>
             <button
-              onClick={() => filterType('chicken')}
+              onClick={() => filterCategory('chicken')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
               Chicken
