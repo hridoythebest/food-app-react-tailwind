@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { data } from '../data/data.js';
 
 const Food = () => {
-  //   console.log(data);
+     console.log(data);
   const [foods, setFoods] = useState(data);
 
   //   Filter Type burgers/pizza/etc
@@ -71,30 +71,30 @@ const Food = () => {
         {/* Filter Price */}
         <div>
           <p className='font-bold text-gray-700'>Filter Price</p>
-          <div className='flex justify-between max-w-[390px] w-full'>
+          <div className='flex justify-between max-w-[690px] w-full'>
             <button
-              onClick={() => filterPrice('$')}
+              onClick={() => filterPrice('9')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              $
+              Less Than $10
             </button>
             <button
-              onClick={() => filterPrice('$$')}
+              onClick={() => filterPrice('99')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              $$
+              Less Than $100
             </button>
             <button
-              onClick={() => filterPrice('$$$')}
+              onClick={() => filterPrice('544')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              $$$
+             Less Than $600
             </button>
             <button
-              onClick={() => filterPrice('$$$$')}
+              onClick={() => filterPrice('6969')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              $$$$
+             Less Than $7000
             </button>
           </div>
         </div>
@@ -115,8 +115,8 @@ const Food = () => {
             <div className='flex justify-between px-2 py-4'>
               <p className='font-bold'>{item.name}</p>
               <p>
-                <span className='bg-orange-500 text-white p-1 rounded-full'>
-                  {item.price}
+                <span className='bg-orange-500 text-white px-2 py-1 rounded-full'>
+                  ${item.price}
                 </span>
               </p>
             </div>
