@@ -91,10 +91,10 @@ const Food = () => {
               $600
             </button>
             <button
-              onClick={() => filterPrice('6969')}
+              onClick={() => filterPrice('9999')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              $7000
+              $10000
             </button>
           </div>
         </div>
